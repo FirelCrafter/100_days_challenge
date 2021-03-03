@@ -23,7 +23,7 @@ class Menu:
         """Returns all the names of the available menu items"""
         options = ""
         for item in self.menu:
-            options += f"   - {item.name.title()} for {item.cost} $\n"
+            options += f"   - {item.name.title()} for ${item.cost}\n"
         return options
 
     def find_drink(self, order_name):
